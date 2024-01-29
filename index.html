@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="display">0</div>
+      <!-- <input type="text" id = 'display' value="0"> -->
+
+      <div class="btn">
+        <input type="button" value="C" onclick="Clear()" class="btnClear" />
+        <input type="button" value="REC" onclick="Store()" class="btnStore" />
+        <input type="button" value="<-" onclick="Backspace()" class="btnBack" />
+        <input
+          type="button"
+          class="btnOperator btnVal"
+          value="/"
+          onclick="appendValue('/')"
+        />
+
+        <input
+          type="button"
+          value="7"
+          onclick="appendValue('7')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          value="8"
+          onclick="appendValue('8')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          value="9"
+          onclick="appendValue('9')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          class="btnOperator btnVal"
+          value="*"
+          onclick="appendValue('*')"
+        />
+
+        <input
+          type="button"
+          value="4"
+          onclick="appendValue('4')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          value="5"
+          onclick="appendValue('5')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          value="6"
+          onclick="appendValue('6')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          class="btnOperator btnVal"
+          value="-"
+          onclick="appendValue('-')"
+        />
+
+        <input
+          type="button"
+          value="1"
+          onclick="appendValue('1')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          value="2"
+          onclick="appendValue('2')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          value="3"
+          onclick="appendValue('3')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          class="btnOperator btnVal"
+          value="+"
+          onclick="appendValue('+')"
+        />
+
+        <input
+          type="button"
+          value="00"
+          onclick="appendValue('00')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          value="0"
+          onclick="appendValue('0')"
+          class="btnVal"
+        />
+        <input
+          type="button"
+          class="btnOperator btnVal"
+          value="."
+          onclick="appendValue('.')"
+        />
+        <input type="button" value="=" onclick="Calculate()" class="btnCalc" />
+        <input
+          type="button"
+          id="history"
+          value="RECORDS"
+          onclick="History()"
+          class="btnRecords"
+        />
+      </div>
+    </div>
+
+    <div class="records"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
